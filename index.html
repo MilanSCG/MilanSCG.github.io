@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="encriptar.js"></script>
+    <script type="text/javascript" src="desencriptar.js"></script>
+    <script type="text/javascript" src="copiar.js"></script>
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="parte-izquierda">
+            <img src="imagenes/Logo.png" alt="logo de alura" class="logo">
+        </div>
+
+        <div class="parte-centro">
+
+            <div class="parte-centro-superior">
+                <p class="copyright">© Alura Latam / MilanSCG</p>
+                <textarea id="insercionTexto" cols="35%" rows="10" class="parte-principal" placeholder="Ingrese el texto aqui..." autofocus></textarea>
+            </div>
+
+            <div class="parte-centro-baja">
+                <legend><h5 class="advertencia"> &#9911 Texto sin acentos </h5></legend>
+                <label class="inferior-izquierdo">
+                    <input id="Encriptador" type="button" value="Encriptar" class="boton-encriptar">
+                </label>
+                <label class="inferior-derecho">
+                    <input id="Desencriptador" type="button" value="Desencriptar" class="boton-desencriptar">
+                </label>
+            </div>
+
+        </div>
+
+        <div class="parte-derecha">
+            <article id="resultadoTexto" class="resultado">
+                <div>
+                    <span id="errorSinTexto">
+                        <img id="imagenRef" src="imagenes/Muneco.png" alt="Texto no encontrado">
+                        <p id="noEncontrado">Ningun mensaje fue <br> encontrado </br></p>
+                        <p id="ingreseTexto">Ingrese el texto que desees encriptar o desencriptar</p>
+                    </span>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+</body>
+
+<script>
+
+    var encrip = document.querySelector("#Encriptador");
+    encrip.onclick = encriptar;
+    var desencrip = document.querySelector("#Desencriptador");
+    desencrip.onclick = desencriptar;
+    var copiar = document.querySelector("#copiar");
+    copiar.onclick = copiar;
+
+</script>
+
+</html>

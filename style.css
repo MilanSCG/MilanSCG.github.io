@@ -1,0 +1,153 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 1% 5% 1% 2%;
+    background-color: #e5e5e5;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.parte-izquierda {
+    text-align: center;
+    width: 15%;
+}
+
+.logo {
+    width: 40%;
+}
+
+.parte-centro {
+    width: 55%;
+}
+
+.parte-centro-superior {
+    margin: 0 0 9% 0;
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#insercionTexto {
+    margin-top: 5%;
+    font-size: 30px;
+    resize: none;
+    border: none;
+    background-color: #e5e5e5;
+    opacity: 75%;
+    color: #0a3871;
+    outline: none;
+}
+
+.parte-principal::placeholder {
+    color: #0a3871;
+}
+
+.parte-centro-baja {
+    margin-top: 0;
+}
+
+.boton-encriptar {
+    width: 35%;
+    margin: -15px 10px 0 0;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 15px;
+    background-color: #0a3871;
+    border-radius: 15px;
+    border-color: #d8dfe8;
+    transition: 0.7s;
+    box-shadow: 0.5px 0.5px 6px 0.5px #000000;
+}
+
+.boton-encriptar:hover {
+    background: #1051a0;
+    transform: scale(1.1);
+    opacity: 85%;
+}
+
+.boton-desencriptar {
+    width: 35%;
+    margin: -15px 0 0 10px;
+    color: #0a3871;
+    padding: 10px 0;
+    font-size: 15px;
+    background-color: #d8dfe8;
+    border-radius: 15px;
+    border-color: #0a3871;
+    transition: 0.7s;
+    box-shadow: 0.5px 0.5px 7px 0.5px #000000;
+} 
+
+.boton-desencriptar:hover {
+    background: #d3dbe7;
+    transform: scale(1.1);
+    opacity: 75%;
+}
+
+.parte-derecha {
+    width: 30%;
+}
+
+#resultadoTexto {
+    width: 100%;
+    height: 90%;
+    margin: 5% 0 5% 0;
+    border-radius: 15px;
+    background-color: #bac2ce; 
+    font-size: 25px;
+    box-shadow: 0.5px 0.5px 10px 0.5px #000000;   
+    opacity: 75%;
+    resize: none;
+    text-align: center;
+    color: #0a3871;
+}
+
+.resultado {
+    padding: 20px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+#imagenRef {
+    width: 80%;
+    margin: 10% 10% 0 10%;
+}
+
+#noEncontrado {
+    font-size: 25px;
+    color: #0a3871;
+}
+
+#ingreseTexto {
+    font-size: 18px;
+    color: #000000;
+}
+
+#btnCopiar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#copiar {
+    width: 35%;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 15px;
+    background-color: #0a3871;
+    border-radius: 15px;
+    border-color: #d8dfe8;
+    transition: 0.7s;
+    box-shadow: 0.5px 0.5px 6px 0.5px #000000;
+}
+
+#copiar:hover {
+    background: #1051a0;
+    transform: scale(1.1);
+    opacity: 85%;
+}
+
